@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 
 }
 
@@ -13,10 +13,12 @@ body{
     height: 100px;
 }
 
+
 .interface{
     max-width: 1280px;
     margin: auto;
 }
+
 
 .flex{
     display: flex;
@@ -29,15 +31,30 @@ body{
     font-weight: 800;
     background-color: #3b0606;
     border: 0;
-    border-radius: 30px;
+    border-radius: 20px;
     cursor: pointer;
+    box-shadow: 0 0 8px color red;
+    transition: .50s;
 }
 
 .btn-contato :hover{
-    box-shadow: 0px 0px 8px #ff222263;
-    color: #f90f0f;
-    transform: scale(1.05);
+    box-shadow: 0px 0px 5px #ff22223c;
+    color: #c80f0f4f;
+    transform: scale(1.02);
 }
+
+h2.titulo{
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+h2.titulo span{
+    color: #f90f0f;
+}
+
 /* ESTILO DO CABEÇALHO */
 
 header{
@@ -86,9 +103,16 @@ section.topo-do-site .flex{
 
 .topo-do-site h1{
     color: #ffffff;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 40px;
+    font-weight: 750;
 }
+
+.topo-do-site .txt-topo-site h1 span1{
+    color: #f90f0f;
+    cursor: pointer;   
+}
+
 .topo-do-site .txt-topo-site h1 span{
     color:#f90f0f;
     font-size: 80px;
@@ -114,6 +138,166 @@ section.topo-do-site .flex{
         top: 30px
     }
 }
+
+/* Estilo das especialidades */
+section.especialiades{
+    padding: 40px 4%;   
+    text-align: center;
+
+   
+}
+
+section.especialidades .flex {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 100px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte, se necessário */
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    border-radius: 80px;
+    transition: .5s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px#f90f0f69;
+    ;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 100px;   
+    color:#f90f0f;   
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 22px;
+    font-weight: 530; 
+}
+
+
+
+/* ESTILO DO SOBRE */
+
+section.sobre{
+    padding: 40px 4%;
+    font-weight: 800;
+}
+
+.sobre .titulo-sobre{
+    text-align: left;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.sobre .titulo-sobre span{
+    font-weight: 800;
+    font-size: 35;
+    color: #f90f0f;
+}
+.sobre .txt-sobre h3{
+    text-align: center;
+    font-size: 25;
+}
+
+
+.sobre .txt-sobre{
+    color: #e7e2e2;
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+/*ESTILO SERVIÇOS*/
+
+section .servicos{
+    padding: 40px 4%;
+    font-weight: 800;
+}
+
+
+section .titulo-servicos{
+    text-align: left;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+section .titulo-servicos span{
+    color: #f90f0f;
+    font-size: 50px;
+}
+
+/*FORMULARIO*/
+
+section.contato {
+    color: #fff;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh; 
+    padding: 40px 4%;
+    text-align: center;
+}
+section.contato span{
+    color: #f90f0f;
+
+}
+
+.form-container {
+    width: 100%;
+    max-width: 1000000px; /* Define a largura máxima do formulário */
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os campos */
+}
+
+input, textarea {
+    border-radius: 5px; /* Arredondamento das bordas */
+    border: 1px solid #ccc;
+    padding: 10px 6px; /* Ajuste o preenchimento para campos mais compactos */
+    font-size: 12px; /* Diminua o tamanho da fonte para barras menores */
+    width: 100%; /* Define a largura para ocupar 100% do contêiner pai */
+    max-width: 300px; /* Define uma largura máxima específica para os campos */
+}
+
+textarea {
+    height: 60px; /* Define a altura da área de texto */
+}
+
+button {
+    border-radius: 5px; /* Arredondamento das bordas */
+    border: none;
+    background-color: #f90f0f;
+    color: #fff;
+    padding: 8px 16px; /* Ajuste o preenchimento do botão */
+    font-size: 14px; /* Ajuste o tamanho da fonte do botão */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
 
 /* Media Queries */
 
@@ -193,24 +377,3 @@ section.topo-do-site .flex{
 }
 
 /* FOOTER */
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.footer{
-    position: fixer;
-    bottom: 0;
-    width: 100%;
-    background-color: #f90f0f;
-    color: #e7e2e2;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.footer p{
-    margin: 0;
-    font-size: 20px;
-}
