@@ -14,9 +14,10 @@ Tecnologias Utilizadas:
 HTML5
 CSS3
 Bootstrap 5
-JavaScript (em breve)
+Python
 
 Estrutura do Projeto
+App.py
 index.html: Estrutura principal da página.
 style.css: Estilos personalizados aplicados ao layout.
 Imagens e ícones: Elementos gráficos usados no site.
